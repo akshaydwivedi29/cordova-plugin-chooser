@@ -128,6 +128,7 @@ public class Chooser extends CordovaPlugin {
 						result.put("mediaType", mediaType);
 						result.put("name", name);
 						result.put("uri", uri.toString());
+						result.put("size", bytes.length);
 
 						this.callback.success(result.toString());
 					}
